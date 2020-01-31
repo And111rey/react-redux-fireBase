@@ -3,8 +3,7 @@ import React, {useReducer} from "react"
 export const SignUp = () => {
 
 
-    const [data, setData] = useReducer(
-        (state, newState) => ({...state, ...newState}), {} );
+    const [data, setData] = useReducer( (state, newState) => ({...state, ...newState}), {} );
 
     const handleChange = e => {
         const name = e.target.name;
