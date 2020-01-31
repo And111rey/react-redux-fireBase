@@ -26,7 +26,7 @@ export const SignUp = () => {
         <div className="container">
             <form className="white" onSubmit={handleSubmit}>
 
-                <h5 className="grey-text text-darken-3"> Sign In</h5>
+                <h5 className="grey-text text-darken-3"> Sign UP</h5>
                 
                 <div className="input-field">
                     <label htmlFor="email">Email</label>
