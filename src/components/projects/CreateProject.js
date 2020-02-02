@@ -1,8 +1,12 @@
 import React, { useReducer } from "react";
+import { createProjectAction } from "../../store/actions/projectsAction"
+import { useDispatch } from "react-redux"
+
 
 export const CreateProject = () => {
     const [data, setData] = useReducer(
         (state, newState) => ({ ...state, ...newState }),{ title: "", content: "" });
+        const dispatch = useDispatch()
     //title
     // content
 
@@ -15,6 +19,7 @@ export const CreateProject = () => {
     const handleSubmit = e => {
         e.preventDefault();
         console.log(data);
+        dispatch(createProjectAction(data))
     };
 
     return (
